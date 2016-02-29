@@ -23,15 +23,9 @@ class PringHttpHeader(tornado.web.RequestHandler):
 
 class Logtest(tornado.web.RequestHandler):
     def get(self):
-        filename = self.get_argument("file")
-        i = 0
-        while i < 100:
-            f = open(filename, 'a')
-            f.write(str(i))
-            i += 1
-            print i
-            f.close()
-            time.sleep(3)
+        f = open('/var/log/0oooooo0.log', 'a')
+        f.write('asdfasf')
+        f.close()
 
 
 def main():
