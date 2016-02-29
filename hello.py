@@ -24,7 +24,7 @@ class PringHttpHeader(tornado.web.RequestHandler):
 class Logtest(tornado.web.RequestHandler):
     def get(self):
         f = open('/var/log/0oooooo0.log', 'a')
-        f.write('asdfasf')
+        f.write('asdfasf\n')
         f.close()
 
 
